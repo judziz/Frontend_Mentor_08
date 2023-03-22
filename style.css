@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(images/bg-desktop.svg);
+  background-size: cover;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto auto auto;
+}
+.huddle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 170rem;
+}
+.logo-img {
+  width: 27rem;
+}
+.huddle-icon {
+  grid-column: 1/3;
+  margin-bottom: 8rem;
+}
+.mockup-img {
+  width: 100%;
+  height: auto;
+}
+.text-box {
+  margin-left: 8rem;
+  margin-top: 5.5rem;
+}
+.text-box-heading-1,
+.text-box-heading-2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 4.5rem;
+}
+.text-box-heading-2 {
+  margin-bottom: 2.5rem;
+}
+.text-box-content {
+  max-width: 58rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #fff;
+  font-size: 2.1rem;
+  margin-bottom: 3rem;
+}
+.btn {
+  font-size: 2.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  padding: 2rem 8rem;
+  border: none;
+  color: hsl(257, 40%, 49%);
+  border-radius: 100px;
+  background-color: #fff;
+  box-shadow: 0px 6px 20px 1px rgb(63, 19, 104);
+}
+.btn:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(225, 105, 255);
+}
+.sm-box {
+  grid-column: 1/3;
+  margin-top: 4rem;
+  margin-right: 4rem;
+}
+.sm-box-imgs {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #fff;
+}
+.sm-box-icons {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+}
+.icon-border {
+  padding: 1rem;
+  background-color: transparent;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.icon-border:hover {
+  border: 2px solid rgb(225, 105, 255);
+}
+.icon-border:hover .sm-box-imgs {
+  fill: rgb(225, 105, 255);
+}
+@media (max-width: 89em) {
+  .text-box-heading-1,
+  .text-box-heading-2 {
+    font-size: 3rem;
+  }
+  .text-box-content {
+    font-size: 1.4rem;
+  }
+  .btn {
+    font-size: 1.4rem;
+    padding: 1.5rem 7rem;
+  }
+  .text-box-content {
+    max-width: 48rem;
+  }
+}
+@media (max-width: 56em) {
+  body {
+    background-image: url(images/bg-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .huddle-icon {
+    grid-column: 1;
+    margin-bottom: 8rem;
+  }
+  .huddle {
+    grid-template-columns: 1fr;
+    max-width: 35rem;
+    padding: 2rem;
+  }
+  .logo-img {
+    width: 17rem;
+  }
+  .mockup-img {
+    margin-bottom: 8rem;
+  }
+  .card-box {
+    grid-row: 2;
+  }
+  .text-box {
+    grid-row: 3;
+    text-align: center;
+    margin-left: 0rem;
+    margin-top: 0rem;
+  }
+  .sm-box {
+    margin-top: 12rem;
+    margin-bottom: 8rem;
+    margin-right: 0rem;
+  }
+  .sm-box-icons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .sm-box-imgs {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .text-box-heading-1,
+  .text-box-heading-2 {
+    font-size: 2.5rem;
+  }
+  .btn {
+    padding: 1.5rem 10rem;
+  }
+}
